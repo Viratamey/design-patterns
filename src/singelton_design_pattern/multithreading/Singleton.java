@@ -1,4 +1,4 @@
-package singelton.design.pattern.multithreading.singleton;
+package singelton_design_pattern.multithreading;
 
 import java.io.Serializable;
 

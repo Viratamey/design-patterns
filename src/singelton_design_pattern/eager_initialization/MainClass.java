@@ -1,13 +1,13 @@
-package singelton.design.pattern;
+package singelton_design_pattern.eager_initialization;
 
 import factory.pattern.Teacher;
 
 public class MainClass {
 	public static void main(String[] args) {
-		SingeltonClass singeltonObject = SingeltonClass.getInstance();
+		SingletonClass singeltonObject = SingletonClass.getInstance();
 		singeltonObject.simpleMethod();
 		
-		SingeltonClass singeltonObject2 = SingeltonClass.getInstance();
+		SingletonClass singeltonObject2 = SingletonClass.getInstance();
 		singeltonObject2.simpleMethod();
 		
 		Teacher teacher = new Teacher();
