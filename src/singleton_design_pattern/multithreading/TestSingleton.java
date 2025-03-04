@@ -1,4 +1,4 @@
-package singelton_design_pattern.multithreading;
+package singleton_design_pattern.multithreading;
 
 public class TestSingleton {
     public static void main(String[] args) {

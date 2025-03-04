@@ -1,4 +1,4 @@
-package singelton_design_pattern.lazy_initialization.synchronization_optimised;
+package singleton_design_pattern.lazy_initialization.synchronization_optimised;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,4 +1,4 @@
-package singelton_design_pattern.multithreading;
+package singleton_design_pattern.multithreading;
 
 import java.io.*;
 import java.lang.reflect.Constructor;
@@ -13,7 +13,7 @@ public class BreakSingletonImpl {
         System.out.println();
 
         // Reflection
-        Class<?> singletonClass = Class.forName("singelton_design_pattern.multithreading.Singleton");
+        Class<?> singletonClass = Class.forName("singleton_design_pattern.multithreading.Singleton");
         Constructor<Singleton> constructor = (Constructor<Singleton>) singletonClass.getDeclaredConstructor();
         constructor.setAccessible(true);
         Singleton brokenSingletonUsingReflection = constructor.newInstance();

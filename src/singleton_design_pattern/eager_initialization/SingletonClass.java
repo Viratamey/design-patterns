@@ -1,4 +1,4 @@
-package singelton_design_pattern.eager_initialization;
+package singleton_design_pattern.eager_initialization;
 
 public class SingletonClass {
 	

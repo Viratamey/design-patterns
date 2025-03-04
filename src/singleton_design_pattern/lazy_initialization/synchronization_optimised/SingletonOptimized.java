@@ -1,4 +1,4 @@
-package singelton_design_pattern.lazy_initialization.synchronization_optimised;
+package singleton_design_pattern.lazy_initialization.synchronization_optimised;
 
 public class SingletonOptimized {
 
