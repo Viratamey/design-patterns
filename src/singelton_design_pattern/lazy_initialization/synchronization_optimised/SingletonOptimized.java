@@ -7,15 +7,14 @@ public class SingletonOptimized {
     private static SingletonOptimized singletonInstance;
 
     public static SingletonOptimized getInstance() {
-        if(singletonInstance != null) {
-            return singletonInstance;
-        }
-        else{
+        if(singletonInstance == null) {
             synchronized(SingletonOptimized.class) {
-                singletonInstance = new SingletonOptimized();
-                return singletonInstance;
+                if(singletonInstance == null) {
+                    singletonInstance = new SingletonOptimized();
+                }
             }
         }
+        return singletonInstance;
     }
 
 }

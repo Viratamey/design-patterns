@@ -26,16 +26,11 @@ public class Singleton implements Serializable, Cloneable {
         if(singleobj == null) {
             synchronized(Singleton.class) {
                 if(singleobj == null) {
-                    return new Singleton();
-                }
-                else {
-                    return singleobj;
+                    singleobj = new Singleton();
                 }
             }
         }
-        else {
-            return new Singleton();
-        }
+        return singleobj;
     }
 
     @Override

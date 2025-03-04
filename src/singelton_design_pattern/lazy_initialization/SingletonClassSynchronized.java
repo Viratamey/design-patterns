@@ -7,10 +7,7 @@ public class SingletonClassSynchronized {
     public static synchronized SingletonClassSynchronized getInstance() {
         if(singletonInstance == null) {
             singletonInstance = new SingletonClassSynchronized();
-            return singletonInstance;
         }
-        else {
-            return singletonInstance;
-        }
+        return singletonInstance;
     };
 }
