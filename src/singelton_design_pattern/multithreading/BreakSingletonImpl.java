@@ -11,9 +11,9 @@ public class BreakSingletonImpl {
         System.out.println(originalSingleton.hashCode());
         System.out.println(s2.hashCode());
         System.out.println();
-        // Reflection
 
-        Class<?> singletonClass = Class.forName("creationalPatterns.singleton.Singleton");
+        // Reflection
+        Class<?> singletonClass = Class.forName("singelton_design_pattern.multithreading.Singleton");
         Constructor<Singleton> constructor = (Constructor<Singleton>) singletonClass.getDeclaredConstructor();
         constructor.setAccessible(true);
         Singleton brokenSingletonUsingReflection = constructor.newInstance();
@@ -25,12 +25,12 @@ public class BreakSingletonImpl {
         // Serialization breaking
 
             // Serialization
-        ObjectOutputStream outputStream = new ObjectOutputStream(new FileOutputStream("/Users/ameypawar/IdeaProjects/DesignPatterns/src/creationalPatterns/singleton/ser"));
+        ObjectOutputStream outputStream = new ObjectOutputStream(new FileOutputStream("src/singelton_design_pattern/multithreading/ser"));
         outputStream.writeObject(originalSingleton);
         outputStream.close();
 
             // DeSerialization
-        ObjectInputStream inputStream = new ObjectInputStream(new FileInputStream("/Users/ameypawar/IdeaProjects/DesignPatterns/src/creationalPatterns/singleton/ser"));
+        ObjectInputStream inputStream = new ObjectInputStream(new FileInputStream("./src/singelton_design_pattern/multithreading/ser"));
         Singleton brokenSingletonUsingSerialize = (Singleton) inputStream.readObject();
         System.out.println(originalSingleton.hashCode());
         System.out.println(brokenSingletonUsingSerialize.hashCode());
