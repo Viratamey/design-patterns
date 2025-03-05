@@ -1,6 +1,6 @@
 package singleton_design_pattern.eager_initialization;
 
-import factory.pattern.Teacher;
+import factory_method.Teacher;
 
 public class MainClass {
 	public static void main(String[] args) {
