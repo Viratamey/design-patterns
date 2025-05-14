@@ -11,6 +11,9 @@ public class MainClass {
         BasePizza cheesePizza = new CheesePizza();
         cheesePizza = new OnionDecorator(cheesePizza);
         cheesePizza = new ChilliFlakesDecorator(cheesePizza);
+        cheesePizza = new ChilliFlakesDecorator(cheesePizza);
+        System.out.println(cheesePizza.cost());
+        cheesePizza = new OnionDecorator(cheesePizza);
         System.out.println(cheesePizza.cost());
         System.out.println(cheesePizza.seasoning());
 
