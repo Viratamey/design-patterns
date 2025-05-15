@@ -39,3 +39,14 @@ There are **four main types** of proxy patterns, each serving a different purpos
 5.  **Smart Proxy** - Provides additional functionality like reference counting or resource management.
 
 Each type of proxy serves a different purpose but follows the same general pattern of controlling access to a real object.
+
+| Proxy Type | Key Feature | Common Use Case |
+| --- | --- | --- |
+| **Virtual Proxy** | Lazy loading | GUI images, large files |
+| **Protection Proxy** | Access control | Role-based document editing |
+| **Remote Proxy** | Network communication | RPC, REST clients, cloud service stubs |
+| **Smart Proxy** | Extra behavior (logging, caching, etc.) | Logging access, retrying, caching |
+| **Cache Proxy** | Store and reuse previous results | API response caching |
+| **Firewall Proxy** | Filters access to resources | Network proxies, reverse proxies |
+| **Synchronization Proxy** | Thread-safe access | Shared resources in multi-threading |
+| **Smart Reference Proxy** | Track object usage (ref counting) | COM, garbage collection systems |
